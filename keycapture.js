@@ -1,4 +1,4 @@
-class KeyCapture {
+export const KeyCapture = class KeyCapture {
     #downListeners;
     #upListeners;
     #func;
@@ -291,8 +291,4 @@ class KeyCapture {
     clearKeys() {
         this.keys = {};
     }
-}
-
-module.exports = {
-    KeyCapture
 }
