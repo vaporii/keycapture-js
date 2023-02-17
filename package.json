@@ -1,0 +1,21 @@
+{
+  "name": "keycapture-js",
+  "version": "1.0.0",
+  "description": "KeyCapture.js is a lightweight library for capturing keyboard events in a web browser.",
+  "main": "keys.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "keyboard",
+    "events",
+    "input",
+    "web",
+    "browser",
+    "utility",
+    "development",
+    "listener"
+  ],
+  "author": "vaporii",
+  "license": "ISC"
+}
