@@ -292,3 +292,7 @@ class KeyCapture {
         this.keys = {};
     }
 }
+
+module.exports = {
+    KeyCapture
+}
