@@ -1,10 +1,10 @@
-class Keyboard {
+class KeyCapture {
     #downListeners;
     #upListeners;
     #func;
     #keyCode;
     /**
-     * The `Keyboard` class provides a simple interface for capturing keyboard events in a web browser.
+     * KeyCapture-js provides a simple interface for capturing keyboard events in a web browser.
      * It allows you to subscribe to keydown and keyup events, and execute custom functions when a key
      * is pressed or released. You can listen for specific key codes, or use the predefined key constants
      * in the `KeyCode` property of the class.
@@ -268,7 +268,7 @@ class Keyboard {
 
         return getKeyByValue(this.keys, keyCode);
     }
-    // TODO: test all of these for error handling and add if needed
+    // TODO: add error handling
 
     /**
      * Binds all key listeners to the specified HTML element. 
@@ -292,17 +292,3 @@ class Keyboard {
         this.keys = {};
     }
 }
-
-let show = (function () {
-    console.log(keyboard.isKeyDown(keyboard.KeyCode.Shift));
-});
-
-// Initialization
-let keyboard = new Keyboard();
-keyboard.subscribe();
-
-// Listen only on canvas element
-keyboard.bindToElement(document.getElementById('canvas'));
-
-// At listener for both keydown and keyup
-keyboard.addListener(show, keyboard.KeyCode.Shift, true, true);
